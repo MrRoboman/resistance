@@ -1,2 +1,57 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'bootstrap/theme';
+
+/* mixins, variables, etc. */
+$primary: #424242;
+$amount: 8%;
+$border-color: #e8e8e8;
+$label-background: hsl(0, 0%, 98%);
+
+/* layout stuff */
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 5px;
+  padding: 0;
+  width: 100%;
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    line-height: 1;
+    li {
+      float: left;
+    }
+  }
+}
+
+#logo {
+  float: left;
+  margin-right: 1rem;
+  font-size: 2em;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  padding-top: 3px;
+  &:hover {
+    color: lighten($primary, $amount);
+    text-decoration: none;
+  }
+  &:active {
+    color: darken($primary, $amount);
+  }
+}

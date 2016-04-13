@@ -10,10 +10,11 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <main class="Site-content">
-      <% flash.each do |message_type, message| %>
+    <main>
+      <!-- <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-      <% end %>
+      <% end %> -->
+
       <%= yield %>
     </main>
     <%= render 'layouts/footer' %>
