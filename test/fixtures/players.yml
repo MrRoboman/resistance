@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order: 1
+  alliance: MyString
+  user_id: 
+  game_id: 
+
+two:
+  order: 1
+  alliance: MyString
+  user_id: 
+  game_id: 
