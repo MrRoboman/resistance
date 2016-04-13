@@ -14,6 +14,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass',           '3.2.0.0'
 
 group :development, :test do
+  gem 'colorize'
+  gem 'pry-rails'
   gem 'byebug'
   gem 'sqlite3'
   gem 'spring',         '1.1.3'
