@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'bootstrap/theme';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
 
 /* mixins, variables, etc. */
 $primary: #424242;
@@ -8,25 +9,29 @@ $amount: 8%;
 $border-color: #e8e8e8;
 $label-background: hsl(0, 0%, 98%);
 
-/* layout stuff */
+/* layout */
 
-body {
+.site {       // main body
   display: flex;
   height: 100vh;
   flex-direction: column;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
   flex: 1;
+  padding: 65px 15px 0;
 }
 
 footer {
-  margin-top: 60px;
+  margin-top: 45px;
   padding-top: 5px;
   padding: 0;
   width: 100%;
   small {
     float: left;
+    display: block;
   }
   ul {
     float: right;
