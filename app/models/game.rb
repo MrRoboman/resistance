@@ -12,12 +12,15 @@
 
 class Game < ActiveRecord::Base
   validates :status, :name, presence: true
-  has_many :players
+
+  # order here should grab players in the right order,
+  # we'll need to update player order on mission completion
+  has_many :players, dependent: :destroy, order: 'order ASC'
+  has_many :missions, dependent: :destroy
 
   has_one :creator,
     foreign_key: player_id,
     primary_key: id,
     class_name: :Player
 
-  
 end

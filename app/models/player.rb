@@ -12,6 +12,6 @@
 #
 
 class Player < ActiveRecord::Base
-  belongs_to :user
+  belongs_to :user # don't user users for now, need to use something else
   belongs_to :game
 end
